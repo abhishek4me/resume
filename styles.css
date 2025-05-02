@@ -1,0 +1,241 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #27187e 0%, #7579ff 100%);
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #222;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 32px;
+    background: rgba(255,255,255,0.97);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,40,120,0.18);
+    transition: box-shadow 0.3s;
+  }
+  
+  .container:hover {
+    box-shadow: 0 16px 40px rgba(39,24,126,0.25);
+  }
+  
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 4px solid #ff8600;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .profile-pic img {
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #27187e;
+    box-shadow: 0 4px 16px rgba(39,24,126,0.2);
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  .profile-pic img:hover {
+    border: 5px solid #ff8600;
+    box-shadow: 0 6px 20px rgba(255,134,0,0.2);
+  }
+  
+  .big-name {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #27187e;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 10px #e9e8ff;
+  }
+  .title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #7579ff;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  /* About Me */
+  .about h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    color: #ff8600;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .about p {
+    font-size: 1.09rem;
+    line-height: 1.7;
+    color: #222;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  
+  /* Info cards (Education, Skills, Experience) */
+  .info-cards {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+  }
+  
+  .card {
+    background: linear-gradient(130deg, #e9e8ff 0%, #f4f7ff 100%);
+    flex: 1 1 260px;
+    min-width: 260px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    box-shadow: 0 2px 10px rgba(39,24,126,0.09);
+    padding: 22px 22px 14px 22px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 28px rgba(255,134,0,0.11);
+  }
+  
+  .card h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.28rem;
+    color: #27187e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 13px 0 8px 0;
+    text-transform: uppercase;
+  }
+  .card i {
+    font-size: 2rem;
+    color: #ff8600;
+    margin-right: 12px;
+  }
+  
+  /* Card content */
+  .card ul {
+    padding: 0 0 0 18px;
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+  
+  /* Skills Badges */
+  .skills-list li {
+    margin-bottom: 7px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 8px;
+    background: #27187e;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.86rem;
+    font-weight: 700;
+    vertical-align: middle;
+    transition: background 0.2s;
+  }
+  .badge-python {
+    background: linear-gradient(90deg, #ff8600 65%, #6a82fb 100%);
+  }
+  
+  /* Contact Section */
+  .contact h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    color: #ff8600;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  .contact-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .button {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, #27187e 60%, #ff8600 100%);
+    color: #fff !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(39,24,126,0.09);
+    transition: background 0.18s, transform 0.15s, box-shadow 0.16s;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .button i {
+    margin-right: 11px;
+    font-size: 1.2rem;
+  }
+  .button:hover {
+    background: linear-gradient(90deg, #ff8600 80%, #27187e 100%);
+    color: #222 !important;
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(255,134,0,0.07);
+  }
+  .ig-btn:hover {
+    background: linear-gradient(90deg, #e1306c 80%, #27187e 100%);
+    color: #fff !important;
+  }
+  .email-btn:hover {
+    background: linear-gradient(90deg, #ff8600 80%, #fff 100%);
+    color: #27187e !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 950px) {
+    .container {
+      padding: 18px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .header {
+      flex-direction: column;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .info-cards {
+      flex-direction: column;
+      gap: 22px;
+    }
+    .big-name {
+      font-size: 2.0rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 7px;
+    }
+    .header {
+      gap: 10px;
+    }
+    .card {
+      padding: 13px 10px 10px 10px;
+    }
+    .about h2, .contact h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* End of CSS */
+  
