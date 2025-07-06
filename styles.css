@@ -1,319 +1,562 @@
-/* Reset and base styles */
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #27187e 0%, #7579ff 100%);
-  font-family: 'Roboto', Arial, sans-serif;
-  color: #222;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 900px;
-  margin: 32px auto;
-  padding: 32px;
-  background: rgba(255,255,255,0.97);
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,40,120,0.18);
-  transition: box-shadow 0.3s;
-}
-
-.container:hover {
-  box-shadow: 0 16px 40px rgba(39,24,126,0.25);
-}
-
-/* HEADER */
-.header {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  border-bottom: 4px solid #ff8600;
-  padding-bottom: 18px;
-  margin-bottom: 24px;
-}
-
-.profile-pic img {
-  width: 116px;
-  height: 116px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #27187e;
-  box-shadow: 0 4px 16px rgba(39,24,126,0.2);
-  transition: border 0.3s, box-shadow 0.3s;
-}
-.profile-pic img:hover {
-  border: 5px solid #ff8600;
-  box-shadow: 0 6px 20px rgba(255,134,0,0.2);
-}
-
-.big-name {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2.9rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #27187e;
-  margin: 0 0 8px 0;
-  text-shadow: 0 2px 10px #e9e8ff;
-}
-.title {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #7579ff;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-/* About Me */
-.about h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2rem;
-  color: #ff8600;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 12px;
-  letter-spacing: 2px;
-}
-.about p {
-  font-size: 1.09rem;
-  line-height: 1.7;
-  color: #222;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 32px;
-}
-
-/* Info cards (Education, Skills, Experience) */
-.info-cards {
-  display: flex;
-  gap: 28px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 34px;
-}
-
-.card {
-  background: linear-gradient(130deg, #e9e8ff 0%, #f4f7ff 100%);
-  flex: 1 1 260px;
-  min-width: 260px;
-  margin-bottom: 10px;
-  border-radius: 13px;
-  box-shadow: 0 2px 10px rgba(39,24,126,0.09);
-  padding: 22px 22px 14px 22px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 28px rgba(255,134,0,0.11);
-}
-
-.card h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.28rem;
-  color: #27187e;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: 13px 0 8px 0;
-  text-transform: uppercase;
-}
-.card i {
-  font-size: 2rem;
-  color: #ff8600;
-  margin-right: 12px;
-}
-
-/* Card content */
-.card ul {
-  padding: 0 0 0 18px;
-  margin: 0;
-  font-size: 1.02rem;
-  line-height: 1.7;
-}
-
-/* Skills Badges */
-.skills-list li {
-  margin-bottom: 7px;
-}
-.badge {
-  display: inline-block;
-  padding: 2px 8px;
-  margin-left: 8px;
-  background: #27187e;
-  color: #fff;
-  border-radius: 8px;
-  font-size: 0.86rem;
-  font-weight: 700;
-  vertical-align: middle;
-  transition: background 0.2s;
-}
-.badge-python {
-  background: linear-gradient(90deg, #ff8600 65%, #6a82fb 100%);
-}
-
-/* Contact Section */
-.contact h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2rem;
-  color: #ff8600;
-  font-weight: 900;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-.contact-links {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-}
-.button {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(90deg, #27187e 60%, #ff8600 100%);
-  color: #fff !important;
-  padding: 10px 24px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  border: none;
-  text-decoration: none;
-  box-shadow: 0 2px 10px rgba(39,24,126,0.09);
-  transition: background 0.18s, transform 0.15s, box-shadow 0.16s;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-.button i {
-  margin-right: 11px;
-  font-size: 1.2rem;
-}
-.button:hover {
-  background: linear-gradient(90deg, #ff8600 80%, #27187e 100%);
-  color: #222 !important;
-  transform: scale(1.04);
-  box-shadow: 0 6px 20px rgba(255,134,0,0.07);
-}
-.ig-btn:hover {
-  background: linear-gradient(90deg, #e1306c 80%, #27187e 100%);
-  color: #fff !important;
-}
-.email-btn:hover {
-  background: linear-gradient(90deg, #ff8600 80%, #fff 100%);
-  color: #27187e !important;
-}
-
-/* New styles for testimonials */
-.testimonials {
-  margin-top: 34px;
-}
-
-.testimonials h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2rem;
-  color: #ff8600;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 24px;
-  letter-spacing: 2px;
-}
-
-.testimonial-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background: linear-gradient(130deg, #e9e8ff 0%, #f4f7ff 100%);
-  border-radius: 13px;
-  box-shadow: 0 2px 10px rgba(39,24,126,0.09);
-  padding: 22px;
-  margin-bottom: 20px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px) scale(1.01);
-  box-shadow: 0 8px 28px rgba(255,134,0,0.11);
-}
-
-.testimonial-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #27187e;
-  flex-shrink: 0;
-}
-
-.testimonial-content p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #222;
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-style: italic;
-}
-
-.testimonial-content span {
-  font-weight: bold;
-  color: #27187e;
-  display: block;
-  margin-top: 5px;
-}
-
-.testimonial-content .title {
-  font-size: 0.95rem;
-  color: #7579ff;
-  font-weight: normal;
-}
-
-/* Responsive Design */
-@media (max-width: 950px) {
-  .container {
-    padding: 18px;
+/* Custom Font: Hanson Bold */
+@font-face {
+    font-family: 'Hanson Bold';
+    src: url('fonts/Hanson-Bold.otf') format('opentype'), /* Prioritize OTF */
+         url('fonts/Hanson-Bold.ttf') format('truetype'); /* Fallback TTF */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
-}
-
-@media (max-width: 750px) {
-  .header {
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
+  
+  /* Custom Font: Creative Thoughts */
+  @font-face {
+    font-family: 'Creative Thoughts';
+    src: url('fonts/Creative-Thoughts.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
-  .info-cards {
-    flex-direction: column;
-    gap: 22px;
-  }
-  .big-name {
-    font-size: 2.0rem;
-  }
-  /* Responsive adjustments for testimonials */
-  .testimonial-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .testimonial-card img {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 7px;
-  }
-  .header {
-    gap: 10px;
-  }
-  .card {
-    padding: 13px 10px 10px 10px;
-  }
-  .about h2, .contact h2, .testimonials h2 {
-    font-size: 1.3rem;
-  }
-  .testimonial-card {
-    padding: 15px;
-  }
-  .testimonial-card img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-/* End of CSS */
+  
+  
+  /* Reset and base styles */
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #D60000; /* Vibrant Red from the poster */
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #F0F0F0; /* Default text color (off-white for contrast) */
+      min-height: 100vh;
+      overflow-x: hidden; /* Prevents horizontal scroll from animations */
+      /* Adding a subtle halftone/grain overlay directly from poster */
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNCA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjMiIHk9IjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjEiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjIiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjxyZWN0IHg9IjAiIHk9IjIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAwMDAxMiIvPjwvc3ZnPg==');
+      background-size: 4px 4px; /* Adjust size for finer grain */
+      background-blend-mode: multiply; /* Blends nicely with the red */
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 32px;
+      background: rgba(0,0,0,0.85); /* Dark background for sections */
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(255,215,0,0.3); /* Yellow/gold glow */
+      transition: box-shadow 0.3s;
+      border: 2px solid #FFD700; /* Stronger yellow border */
+      position: relative; /* For potential overlay effects */
+      overflow: hidden; /* To contain any animations */
+    }
+    
+    .container:hover {
+      box-shadow: 0 16px 40px rgba(255,215,0,0.5); /* Enhanced glow on hover */
+    }
+    
+    /* HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      border-bottom: 4px solid #FFD700; /* Gold/yellow for border */
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+      position: relative; /* For overlay effects */
+    }
+    
+    .profile-pic img {
+      width: 116px;
+      height: 116px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #FFB300; /* More orange-yellow */
+      box-shadow: 0 4px 16px rgba(255,179,0,0.6); /* Orange-yellow shadow */
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    .profile-pic img:hover {
+      border: 5px solid #FFD700; /* Brighter gold on hover */
+      box-shadow: 0 6px 20px rgba(255,215,0,0.8); /* Intense gold shadow on hover */
+    }
+    
+    .big-name {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 2.9rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #FFD700; /* Gold color for name */
+      margin: 0 0 8px 0;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFB300; /* Stronger glow effect */
+    }
+    .title {
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 1.2rem;
+      color: #FFB300; /* Orange-yellow for title */
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    
+    /* About Me */
+    .about h2 {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 2rem;
+      color: #FFD700; /* Gold heading */
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px rgba(255,215,0,0.6); /* Glow */
+    }
+    .about p {
+      font-family: 'Creative Thoughts', cursive; /* Applied Creative Thoughts */
+      font-size: 1.5rem; /* Increased size for decorative font */
+      line-height: 1.7;
+      color: #E0E0E0; /* Lighter grey for readability on dark background */
+      font-weight: 400; /* Weight might not apply if font doesn't have it */
+      margin-top: 0;
+      margin-bottom: 32px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Slight shadow for legibility */
+    }
+    
+    /* Info cards (Skills, Experience) */
+    .info-cards {
+      display: flex;
+      gap: 28px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+    
+    .card {
+      background: rgba(0,0,0,0.7); /* Darker, slightly transparent card */
+      flex: 1 1 260px;
+      min-width: 260px;
+      margin-bottom: 10px;
+      border-radius: 13px;
+      box-shadow: 0 2px 10px rgba(255,215,0,0.2); /* Yellow shadow */
+      padding: 22px 22px 14px 22px;
+      transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+      opacity: 0;
+      transform: translateY(20px);
+      border: 1px solid rgba(255,215,0,0.3); /* Subtle yellow border */
+    }
+    .card.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 28px rgba(255,179,0,0.4); /* More intense orange-yellow shadow */
+    }
+    
+    .card h2 {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 1.28rem;
+      color: #FFD700; /* Gold heading */
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 13px 0 8px 0;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px rgba(255,215,0,0.4);
+    }
+    .card i {
+      font-size: 2rem;
+      color: #FFB300; /* Orange-yellow icons */
+      margin-right: 12px;
+    }
+    
+    /* Card content */
+    .card ul {
+      padding: 0 0 0 18px;
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #C0C0C0; /* Lighter grey for list items */
+    }
+    
+    /* Skills Badges */
+    .skills-list li {
+      margin-bottom: 7px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      margin-left: 8px;
+      background: #E70000; /* Red badge */
+      color: #FFD700; /* Yellow text */
+      border-radius: 8px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      vertical-align: middle;
+      transition: background 0.2s;
+      border: 1px solid #FFD700; /* Yellow border */
+    }
+    .badge-python {
+      background: linear-gradient(90deg, #E70000 65%, #FFB300 100%); /* Red to orange-yellow gradient */
+      color: #FFFFFF; /* White text for gradient */
+      border: none; /* Remove border for gradient */
+    }
+    
+    /* Contact Section */
+    .contact h2 {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 2rem;
+      color: #FFD700; /* Gold heading */
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px rgba(255,215,0,0.6);
+    }
+    .contact-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      background: #FFD700; /* Yellow background */
+      color: #000000 !important; /* Black text */
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: 2px solid #E70000; /* Red border */
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      transition: background 0.18s, transform 0.15s, box-shadow 0.16s, border-color 0.18s;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .button i {
+      margin-right: 11px;
+      font-size: 1.2rem;
+      color: #E70000; /* Red icons */
+    }
+    .button:hover {
+      background: #E70000; /* Red background on hover */
+      color: #FFD700 !important; /* Yellow text on hover */
+      transform: scale(1.04);
+      box-shadow: 0 6px 20px rgba(255,215,0,0.2);
+      border-color: #FFD700; /* Yellow border on hover */
+    }
+    /* Specific button hover effects for contrast */
+    .ig-btn:hover {
+      background: #FFB300; /* Orange-yellow for IG */
+      color: #E70000 !important; /* Red text */
+      border-color: #E1306C; /* IG Pink border */
+    }
+    .linkedin-btn:hover {
+      background: #0A66C2; /* LinkedIn blue */
+      color: #FFFFFF !important; /* White text */
+      border-color: #FFD700; /* Yellow border */
+    }
+    .email-btn:hover {
+      background: #FF8C00; /* Deeper orange for email */
+      color: #FFFFFF !important; /* White text */
+      border-color: #FFD700; /* Yellow border */
+    }
+    
+    /* New styles for Testimonials */
+    .testimonials {
+      margin-top: 34px;
+    }
+  
+    .testimonials h2 {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 2rem;
+      color: #FFD700; /* Gold heading */
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 24px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px rgba(255,215,0,0.6);
+    }
+  
+    .testimonial-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: rgba(0,0,0,0.7); /* Dark card background */
+      border-radius: 13px;
+      box-shadow: 0 2px 10px rgba(255,215,0,0.2);
+      padding: 22px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+      opacity: 0;
+      transform: translateX(-30px);
+      border: 1px solid rgba(255,215,0,0.3); /* Subtle yellow border */
+    }
+    /* Staggered animation for testimonial cards */
+    .testimonial-card:nth-child(2) { transition-delay: 0.1s; }
+    .testimonial-card:nth-child(3) { transition-delay: 0.2s; }
+    /* Add more if you have more than 3 */
+  
+    .testimonial-card.is-visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 8px 28px rgba(255,179,0,0.4);
+    }
+  
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #FFB300; /* Orange-yellow border */
+      flex-shrink: 0;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    .testimonial-card img:hover {
+      border: 3px solid #FFD700; /* Gold border on hover */
+      box-shadow: 0 0 10px rgba(255,215,0,0.8); /* Glow on hover */
+    }
+  
+    .testimonial-content p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #E0E0E0; /* Lighter grey */
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+  
+    .testimonial-content span {
+      font-weight: bold;
+      color: #FFD700; /* Gold for name */
+      display: block;
+      margin-top: 5px;
+    }
+  
+    .testimonial-content .title {
+      font-size: 0.95rem;
+      color: #FFB300; /* Orange-yellow for title */
+      font-weight: normal;
+    }
+  
+    /* New styles for Educational Journey Timeline */
+    .education-timeline {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  
+    .education-timeline h2 {
+      font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
+      font-size: 2rem;
+      color: #FFD700; /* Gold heading */
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 24px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px rgba(255,215,0,0.6);
+      text-align: center;
+    }
+  
+    .timeline-container {
+      position: relative;
+      padding-left: 50px;
+      border-left: 4px dashed #FFD700; /* Dashed gold line */
+      padding-bottom: 10px; /* Space at the bottom for the line */
+    }
+  
+    .timeline-item {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: rgba(0,0,0,0.7); /* Dark card background */
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(255,215,0,0.25);
+      position: relative;
+      opacity: 0;
+      transform: translateX(50px) scale(0.95); /* Start smaller and offset */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Slower, more impactful transition */
+      border: 1px solid rgba(255,215,0,0.3);
+    }
+    .timeline-item.is-visible {
+      opacity: 1;
+      transform: translateX(0) scale(1); /* Fully visible, original size */
+    }
+    /* Staggered animation for timeline items */
+    .timeline-item:nth-child(even) { /* Alternate direction */
+      transform: translateX(-50px) scale(0.95);
+    }
+    .timeline-item:nth-child(even).is-visible {
+      transform: translateX(0) scale(1);
+    }
+  
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 18px; /* Slightly larger dot */
+      height: 18px;
+      background-color: #FFB300; /* Orange-yellow dot */
+      border: 4px solid #FFD700; /* Thicker gold border for dot */
+      border-radius: 50%;
+      left: -32px; /* Adjusted position for larger dot/border */
+      top: 25px;
+      z-index: 1;
+      box-shadow: 0 0 10px rgba(255,215,0,0.7); /* Glow for dot */
+    }
+  
+    .timeline-content {
+      display: flex;
+      align-items: center; /* Align image and text */
+      gap: 20px; /* Space between image and text */
+    }
+  
+    .timeline-content img {
+      width: 120px; /* Larger image size */
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px; /* Slightly rounded corners for images */
+      border: 2px solid #E70000; /* Red border for image */
+      box-shadow: 0 0 10px rgba(255,215,0,0.5); /* Yellow glow for images */
+      flex-shrink: 0; /* Prevent image from shrinking */
+      
+      opacity: 0; /* Hidden by default for animation */
+      transform: scale(0.8) rotateY(90deg); /* Starts smaller and rotated */
+      transition: opacity 0.5s ease-in 0.3s, transform 0.5s ease-in 0.3s; /* Delayed animation */
+    }
+  
+    .timeline-content img.img-visible {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+    }
+  
+    .timeline-item h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.3rem;
+      color: #FFD700; /* Gold */
+      margin-top: 0;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+  
+    .timeline-item p {
+      font-size: 1.05rem;
+      color: #E0E0E0;
+      margin: 0;
+    }
+  
+    .timeline-item .known-for {
+        font-style: italic;
+        font-size: 0.95rem;
+        color: #FFB300; /* Orange-yellow for "known for" text */
+        margin-top: 8px;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 950px) {
+      .container {
+        padding: 18px;
+      }
+    }
+    
+    @media (max-width: 750px) {
+      .header {
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+      }
+      .info-cards {
+        flex-direction: column;
+        gap: 22px;
+      }
+      .big-name {
+        font-size: 2.0rem;
+        letter-spacing: 2px;
+      }
+      .about p { /* Adjust font size for readability on smaller screens */
+          font-size: 1.3rem;
+      }
+      /* Responsive adjustments for testimonials */
+      .testimonial-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transform: translateX(0) translateY(20px);
+      }
+      .testimonial-card.is-visible {
+          transform: translateX(0) translateY(0);
+      }
+      .testimonial-card img {
+        margin-bottom: 10px;
+      }
+      .timeline-container {
+        padding-left: 30px;
+      }
+      .timeline-item::before {
+        left: -17px;
+      }
+      .timeline-content {
+          flex-direction: column; /* Stack image and text */
+          align-items: center;
+          text-align: center;
+      }
+      .timeline-content img {
+          margin-bottom: 15px; /* Add space below image when stacked */
+          width: 100px; /* Adjust image size for mobile */
+          height: 75px;
+      }
+      .timeline-item h3 {
+          font-size: 1.2rem;
+      }
+      .timeline-item p {
+          font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding: 7px;
+      }
+      .header {
+        gap: 10px;
+      }
+      .card {
+        padding: 13px 10px 10px 10px;
+        transform: translateY(15px);
+      }
+      .card.is-visible {
+          transform: translateY(0);
+      }
+      .about h2, .contact h2, .testimonials h2, .education-timeline h2 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+      }
+      .about p {
+          font-size: 1.1rem; /* Smaller for very small screens */
+      }
+      .testimonial-card {
+        padding: 15px;
+      }
+      .testimonial-card img {
+        width: 60px;
+        height: 60px;
+      }
+      .big-name {
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+      }
+      .title {
+          font-size: 1rem;
+      }
+      .timeline-item {
+          padding: 15px;
+          transform: translateX(30px);
+      }
+      .timeline-item.is-visible {
+          transform: translateX(0);
+      }
+      .timeline-item h3 {
+          font-size: 1.1rem;
+      }
+      .timeline-item p {
+          font-size: 0.95rem;
+      }
+      .timeline-content img {
+          width: 80px; /* Even smaller for tiny screens */
+          height: 60px;
+      }
+    }
