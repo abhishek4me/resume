@@ -202,7 +202,7 @@
       letter-spacing: 2px;
       margin-bottom: 16px;
       text-transform: uppercase;
-      text-shadow: 0 0 8px rgba(255,215,0,0.6);
+      text-shadow: 0 0 4px rgba(255,215,0,0.6);
     }
     .contact-links {
       display: flex;
