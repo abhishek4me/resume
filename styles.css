@@ -79,7 +79,7 @@
       letter-spacing: 3px;
       color: #FFD700; /* Gold color for name */
       margin: 0 0 8px 0;
-      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFB300; /* Stronger glow effect */
+      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFB300; /* Stronger glow effect */
     }
     .title {
       font-family: 'Roboto', Arial, sans-serif;
