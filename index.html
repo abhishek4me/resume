@@ -21,27 +21,22 @@
         <p class="title">Sophomore | B.Tech Electronics and CS | Tech Enthusiast</p>
       </div>
     </header>
-
     <main>
       <section class="about">
         <h2>ABOUT ME</h2>
         <p>
-          I am Abhishek R S, a Second year B.Tech student in Electronics and Computer Engineering at APJ Abdul Kalam Technological University. I come from a family that values discipline, purpose, and steady growth which are the traits that I’ve absorbed from my father, a train manager as well as a retired army officer, and my mother, whose resilience and dedication shape our home.
+          I am a dedicated second-year B.Tech student specializing in Electronics and Computer Engineering at APJ Abdul Kalam Technological University. With a strong foundation from the CBSE curriculum, I have developed excellent communication skills in English and Hindi and an early passion for technology and programming. I independently learned Python during high school and secured an A+ in my first-year KTU semester examination.
         </p>
         <p>
-          My academic journey began under the CBSE curriculum, where I built strong communication skills in English and Hindi, and developed working fluency in Tamil. Early on, I found a deep interest in technology and programming. By the end of high school, I had independently learned Python and later earned an A+ in the KTU First year semester examination.
+          I have experience in writing clear and well-structured technical and research documents, and I actively take initiative and demonstrate leadership in team projects. My focus on continuous learning and steady improvement has consistently earned me recognition from educators and peers.
         </p>
         <p>
-          Writing is another space where I thrive. I’ve contributed to several group projects and written technical and research-based documents. Whether it’s breaking down complex ideas or leading collaborative efforts, I focus on clarity, structure, and impact.
+          Alongside my academics, I bring over five years of experience in graphic design using Photoshop, complemented by proficiency in Canva and AI-based tools to enhance productivity and creativity. As an active member of the Electronics Association design team, I create professional-grade posters, banners, and visual materials that balance creative innovation with attention to detail.
         </p>
         <p>
-          Outside academics, I enjoy working in teams, often stepping into leadership roles to coordinate tasks and guide project flow. I like taking initiative, especially when it involves solving real problems or organizing efforts that bring people together. My teachers often describe me as dependable, thoughtful, and consistently focused on improvement.
-        </p>
-        <p>
-          At home, I share a close bond with my younger brother, who’s in high school, and our pet cat, Pisu, who adds a touch of fun to everyday life. Respect, curiosity, and a steady drive to grow these are the things which define how I work, learn, and show up for others. I’m still learning, still building, and always ready for the next challenge.
+          By combining technical expertise, strong communication, leadership qualities, and advanced design skills, I contribute as a versatile and growth-oriented team member to every project I take on.
         </p>
       </section>
-
       <section class="education-timeline">
         <h2>EDUCATIONAL JOURNEY</h2>
         <div class="timeline-container">
@@ -59,7 +54,7 @@
           </div>
           <div class="timeline-item" data-school="StAntony">
             <div class="timeline-content">
-                <h3>St. Antony’s Public School, Annakal</h3>
+                <h3>St. Antony's Public School, Annakal</h3>
                 <p><strong>2022-2023:</strong> Studies Completed</p>
             </div>
           </div>
@@ -71,7 +66,6 @@
           </div>
         </div>
       </section>
-
       <section class="info-cards">
         <div class="card">
           <i class="fas fa-cogs"></i>
@@ -83,7 +77,6 @@
             <li>Fluent: English, Hindi | Good: Tamil</li>
           </ul>
         </div>
-
         <div class="card">
           <i class="fas fa-medal"></i>
           <h2>EXPERIENCE & ACHIEVEMENTS</h2>
@@ -95,7 +88,6 @@
           </ul>
         </div>
       </section>
-
       <section class="testimonials">
         <h2>WHAT PEOPLE SAY</h2>
         <div class="testimonial-card">
@@ -126,7 +118,6 @@
           </div>
         </div>
       </section>
-
       <section class="contact">
         <h2>CONTACT</h2>
         <div class="contact-links">
@@ -143,7 +134,6 @@
       </section>
     </main>
   </div>
-
   <script>
     // JavaScript for scroll-triggered animations
     document.addEventListener('DOMContentLoaded', () => {
@@ -152,7 +142,6 @@
         rootMargin: '0px',
         threshold: 0.1 // Trigger when 10% of the element is visible
       };
-
       const animateOnScroll = (entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -163,19 +152,15 @@
           }
         });
       };
-
       const observer = new IntersectionObserver(animateOnScroll, observerOptions);
-
       // Observe timeline items for education
       document.querySelectorAll('.timeline-item').forEach(item => {
         observer.observe(item);
       });
-
       // Observe testimonial cards
       document.querySelectorAll('.testimonial-card').forEach(card => {
         observer.observe(card);
       });
-
       // Observe info cards (Skills & Experience)
       document.querySelectorAll('.info-cards .card').forEach(card => {
         observer.observe(card);
@@ -183,4 +168,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
