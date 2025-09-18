@@ -7,7 +7,6 @@
     font-style: normal;
     font-display: swap;
   }
-  
   /* Custom Font: Creative Thoughts */
   @font-face {
     font-family: 'Creative Thoughts';
@@ -16,8 +15,6 @@
     font-style: normal;
     font-display: swap;
   }
-  
-  
   /* Reset and base styles */
   body {
       margin: 0;
@@ -112,6 +109,7 @@
       margin-top: 0;
       margin-bottom: 32px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Slight shadow for legibility */
+      text-align: justify; /* Added text justification */
     }
     
     /* Info cards (Skills, Experience) */
@@ -259,7 +257,6 @@
     .testimonials {
       margin-top: 34px;
     }
-  
     .testimonials h2 {
       font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
       font-size: 2rem;
@@ -270,7 +267,6 @@
       letter-spacing: 2px;
       text-shadow: 0 0 8px rgba(255,215,0,0.6);
     }
-  
     .testimonial-card {
       display: flex;
       align-items: flex-start;
@@ -289,7 +285,6 @@
     .testimonial-card:nth-child(2) { transition-delay: 0.1s; }
     .testimonial-card:nth-child(3) { transition-delay: 0.2s; }
     /* Add more if you have more than 3 */
-  
     .testimonial-card.is-visible {
       opacity: 1;
       transform: translateX(0);
@@ -299,7 +294,6 @@
       transform: translateY(-5px) scale(1.01);
       box-shadow: 0 8px 28px rgba(255,179,0,0.4);
     }
-  
     .testimonial-card img {
       width: 80px;
       height: 80px;
@@ -313,7 +307,6 @@
       border: 3px solid #FFD700; /* Gold border on hover */
       box-shadow: 0 0 10px rgba(255,215,0,0.8); /* Glow on hover */
     }
-  
     .testimonial-content p {
       font-size: 1.05rem;
       line-height: 1.6;
@@ -322,26 +315,22 @@
       margin-bottom: 8px;
       font-style: italic;
     }
-  
     .testimonial-content span {
       font-weight: bold;
       color: #FFD700; /* Gold for name */
       display: block;
       margin-top: 5px;
     }
-  
     .testimonial-content .title {
       font-size: 0.95rem;
       color: #FFB300; /* Orange-yellow for title */
       font-weight: normal;
     }
-  
     /* New styles for Educational Journey Timeline */
     .education-timeline {
       margin-top: 40px;
       margin-bottom: 40px;
     }
-  
     .education-timeline h2 {
       font-family: 'Hanson Bold', Arial, sans-serif; /* Applied Hanson Bold */
       font-size: 2rem;
@@ -353,14 +342,12 @@
       text-shadow: 0 0 8px rgba(255,215,0,0.6);
       text-align: center;
     }
-  
     .timeline-container {
       position: relative;
       padding-left: 50px;
       border-left: 4px dashed #FFD700; /* Dashed gold line */
       padding-bottom: 10px; /* Space at the bottom for the line */
     }
-  
     .timeline-item {
       margin-bottom: 30px;
       padding: 20px;
@@ -384,7 +371,6 @@
     .timeline-item:nth-child(even).is-visible {
       transform: translateX(0) scale(1);
     }
-  
     .timeline-item::before {
       content: '';
       position: absolute;
@@ -398,13 +384,11 @@
       z-index: 1;
       box-shadow: 0 0 10px rgba(255,215,0,0.7); /* Glow for dot */
     }
-  
     .timeline-content {
       display: flex;
       align-items: center; /* Align image and text */
       gap: 20px; /* Space between image and text */
     }
-  
     .timeline-content img {
       width: 120px; /* Larger image size */
       height: 90px;
@@ -418,12 +402,10 @@
       transform: scale(0.8) rotateY(90deg); /* Starts smaller and rotated */
       transition: opacity 0.5s ease-in 0.3s, transform 0.5s ease-in 0.3s; /* Delayed animation */
     }
-  
     .timeline-content img.img-visible {
         opacity: 1;
         transform: scale(1) rotateY(0deg);
     }
-  
     .timeline-item h3 {
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 1.3rem;
@@ -432,20 +414,17 @@
       margin-bottom: 5px;
       letter-spacing: 1px;
     }
-  
     .timeline-item p {
       font-size: 1.05rem;
       color: #E0E0E0;
       margin: 0;
     }
-  
     .timeline-item .known-for {
         font-style: italic;
         font-size: 0.95rem;
         color: #FFB300; /* Orange-yellow for "known for" text */
         margin-top: 8px;
     }
-  
     /* Responsive Design */
     @media (max-width: 950px) {
       .container {
