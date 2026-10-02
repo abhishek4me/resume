@@ -3,169 +3,746 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek R S | Resume</title>
+  <title>Abhishek R S | Computer Science & Electronics | Portfolio & Resume</title>
+  <meta name="description" content="Resume and portfolio of Abhishek R S, B.Tech student in Computer Science and Electronics at Marian Engineering College, specializing in Data Science, Machine Learning, and RAG systems.">
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
   <div class="container">
-    <header class="header">
-      <div class="profile-pic">
-        <a href="https://ibb.co/nMWhwr7W" target="_blank">
-          <img src="https://i.ibb.co/HTJmK7tJ/pfp.jpg" alt="Abhishek R S">
-        </a>
+    <!-- NAVIGATION BAR -->
+    <nav class="top-nav" aria-label="Quick Navigation">
+      <div class="nav-links">
+        <a href="#about"><i class="fas fa-user"></i> <span>About</span></a>
+        <a href="#education"><i class="fas fa-graduation-cap"></i> <span>Education</span></a>
+        <a href="#experience"><i class="fas fa-briefcase"></i> <span>Experience</span></a>
+        <a href="#projects"><i class="fas fa-code-branch"></i> <span>Projects</span></a>
+        <a href="#skills"><i class="fas fa-layer-group"></i> <span>Skills</span></a>
+        <a href="#certifications"><i class="fas fa-award"></i> <span>Certificates</span></a>
+        <a href="#contact" class="nav-cta"><i class="fas fa-paper-plane"></i> <span>Contact</span></a>
       </div>
-      <div>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="header">
+      <div class="profile-pic-wrapper">
+        <div class="avatar-ring">
+          <img src="images/profile.gif" alt="Abhishek R S profile picture animation" class="profile-img" id="profilePic">
+        </div>
+        <div class="status-indicator" title="Open to Tech Opportunities">
+          <span class="pulse-dot"></span> Available for Projects
+        </div>
+      </div>
+
+      <div class="header-content">
+        <div class="badge-tag"><i class="fas fa-terminal"></i> Sophomore &amp; Innovator</div>
         <h1 class="big-name">ABHISHEK R S</h1>
-        <p class="title">Sophomore | B.Tech Electronics and CS | Tech Enthusiast</p>
+        <p class="role-title">
+          B.Tech in Computer Science &amp; Electronics <span>|</span> Data Science &amp; Machine Learning Enthusiast
+        </p>
+        
+        <p class="location-line">
+          <i class="fas fa-map-marker-alt"></i> Trivandrum, Kerala, India
+        </p>
+
+        <!-- Quick Contact Chips -->
+        <div class="quick-contact-bar">
+          <a href="mailto:abhishekofficial6969@gmail.com" class="contact-chip" title="Send Email">
+            <i class="fas fa-envelope"></i>
+            <span>abhishekofficial6969@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/abhishek6969" target="_blank" rel="noopener noreferrer" class="contact-chip" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/abhishek6969</span>
+          </a>
+          <a href="https://github.com/abhishek4me/" target="_blank" rel="noopener noreferrer" class="contact-chip" title="GitHub Profile">
+            <i class="fab fa-github"></i>
+            <span>github.com/abhishek4me</span>
+          </a>
+        </div>
       </div>
     </header>
+
     <main>
-      <section class="about">
-        <h2>ABOUT ME</h2>
-        <p>
-          I am a dedicated second-year B.Tech student specializing in Electronics and Computer Engineering at APJ Abdul Kalam Technological University. With a strong foundation from the CBSE curriculum, I have developed excellent communication skills in English and Hindi and an early passion for technology and programming. I independently learned Python during high school and secured an A+ in my first-year KTU semester examination.
-        </p>
-        <p>
-          I have experience in writing clear and well-structured technical and research documents, and I actively take initiative and demonstrate leadership in team projects. My focus on continuous learning and steady improvement has consistently earned me recognition from educators and peers.
-        </p>
-        <p>
-          Alongside my academics, I bring over five years of experience in graphic design using Photoshop, complemented by proficiency in Canva and AI-based tools to enhance productivity and creativity. As an active member of the Electronics Association design team, I create professional-grade posters, banners, and visual materials that balance creative innovation with attention to detail.
-        </p>
-        <p>
-          By combining technical expertise, strong communication, leadership qualities, and advanced design skills, I contribute as a versatile and growth-oriented team member to every project I take on.
-        </p>
-      </section>
-      <section class="education-timeline">
-        <h2>EDUCATIONAL JOURNEY</h2>
-        <div class="timeline-container">
-          <div class="timeline-item" data-school="APJ">
-            <div class="timeline-content">
-                <h3>APJ Abdul Kalam Technical University</h3>
-                <p><strong>2024-Present:</strong> B.Tech, Electronics & Computer Science</p>
+      <!-- PROFESSIONAL SUMMARY / ABOUT ME -->
+      <section id="about" class="section about-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-id-card"></i></span>
+          <h2>Professional Summary</h2>
+        </div>
+        <div class="summary-card">
+          <p class="highlight-p">
+            Second-year B.Tech student in <strong>Computer Science and Electronics</strong> at <strong>Marian Engineering College, Trivandrum</strong>, with a strong interest in data science, machine learning, Python programming, and intelligent software systems.
+          </p>
+          <p>
+            Gaining practical experience through data analysis projects, machine learning training, and the planning of a <strong>Retrieval-Augmented Generation (RAG)</strong> based academic web application. Actively interested in building reliable, data-driven solutions and continuously improving technical skills through hands-on projects.
+          </p>
+          <p>
+            Alongside my core technical studies, I bring over five years of visual and graphic design experience using Photoshop, complemented by Canva and AI-powered tools. As an active member of the Electronics Association design team, I craft high-impact visual assets and research documentation with sharp attention to detail and creative execution.
+          </p>
+          
+          <!-- Key Metric Highlights -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">Sep 2024–28</span>
+              <span class="stat-label">B.Tech CS &amp; Electronics</span>
             </div>
-          </div>
-          <div class="timeline-item" data-school="Sarvodaya">
-            <div class="timeline-content">
-                <h3>Sarvodaya Central Vidyalaya (CBSE)</h3>
-                <p><strong>2023-2024:</strong> Higher Secondary</p>
+            <div class="stat-box">
+              <span class="stat-number">A+ Grade</span>
+              <span class="stat-label">KTU 1st Year Exam</span>
             </div>
-          </div>
-          <div class="timeline-item" data-school="StAntony">
-            <div class="timeline-content">
-                <h3>St. Antony's Public School, Annakal</h3>
-                <p><strong>2022-2023:</strong> Studies Completed</p>
+            <div class="stat-box">
+              <span class="stat-number">Planning Phase</span>
+              <span class="stat-label">KTU RAG Syllabus Portal</span>
             </div>
-          </div>
-          <div class="timeline-item" data-school="Kendriya">
-            <div class="timeline-content">
-                <h3>Kendriya Vidyalaya</h3>
-                <p><strong>2010-2020:</strong> Grades 1-10</p>
+            <div class="stat-box">
+              <span class="stat-number">5+ Years</span>
+              <span class="stat-label">Visual Design Experience</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="info-cards">
-        <div class="card">
-          <i class="fas fa-cogs"></i>
-          <h2>SKILLS</h2>
-          <ul class="skills-list">
-            <li>Python Programming <span class="badge badge-python">Expert</span></li>
-            <li>Photoshop, Canva & Video Editing</li>
-            <li>Leadership & Teamwork</li>
-            <li>Fluent: English, Hindi | Good: Malayalam</li>
+
+      <!-- EDUCATIONAL JOURNEY (NEW INTERACTIVE REPRESENTATION) -->
+      <section id="education" class="section education-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-graduation-cap"></i></span>
+          <h2>Educational Journey</h2>
+        </div>
+        
+        <p class="section-desc">A structured chronicle of academic milestones, coursework excellence, and technical foundations.</p>
+
+        <div class="education-roadmap">
+          <!-- Milestone 1 -->
+          <div class="roadmap-item current-stage">
+            <div class="roadmap-marker">
+              <div class="marker-dot">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="marker-line"></div>
+            </div>
+
+            <div class="roadmap-card">
+              <div class="card-top">
+                <div class="inst-info">
+                  <span class="badge-status current">Current Academic Track</span>
+                  <h3 class="inst-title">Marian Engineering College, Trivandrum</h3>
+                  <div class="degree-title">Bachelor of Technology &mdash; Computer Science and Electronics</div>
+                  <div class="inst-affiliation"><i class="fas fa-check-circle"></i> Affiliated with APJ Abdul Kalam Technological University (KTU)</div>
+                </div>
+                <div class="date-badge">
+                  <i class="far fa-calendar-alt"></i> Sep 2024 &mdash; Sep 2028
+                </div>
+              </div>
+
+              <div class="card-details">
+                <ul class="roadmap-points">
+                  <li><strong>Academic Merit:</strong> Secured an outstanding <strong>A+ Grade</strong> in the KTU first-year examination.</li>
+                  <li><strong>Core Specialization:</strong> Data Science, Machine Learning, Embedded Electronics, Python Systems, Object-Oriented Programming, and Data Structures.</li>
+                  <li><strong>Leadership &amp; Initiative:</strong> Team Lead on the <em>KTU RAG-Integrated Syllabus Portal</em> (<strong>Planning Phase</strong>), driving initial requirements and natural-language search planning.</li>
+                  <li><strong>Association Involvement:</strong> Active core member of the Electronics Association design &amp; technical committee.</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="edu-tag">Computer Science</span>
+                  <span class="edu-tag">Electronics</span>
+                  <span class="edu-tag">Machine Learning</span>
+                  <span class="edu-tag">Python</span>
+                  <span class="edu-tag">KTU Scheme 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="roadmap-item">
+            <div class="roadmap-marker">
+              <div class="marker-dot">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="marker-line"></div>
+            </div>
+
+            <div class="roadmap-card">
+              <div class="card-top">
+                <div class="inst-info">
+                  <span class="badge-status completed">Completed</span>
+                  <h3 class="inst-title">St. Antony's Public School, Trivandrum</h3>
+                  <div class="degree-title">Higher Secondary (Class XI &mdash; XII)</div>
+                  <div class="inst-affiliation"><i class="fas fa-book-reader"></i> Science &amp; Computer Science Stream</div>
+                </div>
+                <div class="date-badge">
+                  <i class="far fa-calendar-alt"></i> Jul 2022 &mdash; Apr 2024
+                </div>
+              </div>
+
+              <div class="card-details">
+                <ul class="roadmap-points">
+                  <li>Completed senior secondary education with focus on Mathematics, Physics, Chemistry, and Computer Science.</li>
+                  <li>Independently taught myself Python programming, creating automated scripts and algorithmic experiments.</li>
+                  <li>Built rigorous quantitative problem-solving skills and technical writing competencies.</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="edu-tag">Higher Secondary</span>
+                  <span class="edu-tag">Mathematics &amp; Physics</span>
+                  <span class="edu-tag">Python Self-Study</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="roadmap-item">
+            <div class="roadmap-marker">
+              <div class="marker-dot">
+                <i class="fas fa-award"></i>
+              </div>
+            </div>
+
+            <div class="roadmap-card">
+              <div class="card-top">
+                <div class="inst-info">
+                  <span class="badge-status completed">Completed</span>
+                  <h3 class="inst-title">Kendriya Vidyalaya, India</h3>
+                  <div class="degree-title">Primary and Secondary Education (Class I &mdash; X)</div>
+                  <div class="inst-affiliation"><i class="fas fa-feather-alt"></i> Central Board of Secondary Education (CBSE)</div>
+                </div>
+                <div class="date-badge">
+                  <i class="far fa-calendar-alt"></i> Jun 2012 &mdash; Mar 2021
+                </div>
+              </div>
+
+              <div class="card-details">
+                <ul class="roadmap-points">
+                  <li>Developed strong mathematical aptitude and scientific curiosity under the CBSE nationwide framework.</li>
+                  <li>Cultivated bilingual fluency in Hindi and English with active participation in elocution and team activities.</li>
+                  <li>Laid foundational interest in computational logic, science fairs, and collaborative learning.</li>
+                </ul>
+                <div class="tag-row">
+                  <span class="edu-tag">CBSE</span>
+                  <span class="edu-tag">Foundation</span>
+                  <span class="edu-tag">Bilingual Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section experience-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-briefcase"></i></span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="experience-card">
+          <div class="exp-header">
+            <div>
+              <span class="exp-badge"><i class="fas fa-robot"></i> Machine Learning Internship</span>
+              <h3 class="exp-role">Data Science and Machine Learning Intern</h3>
+              <div class="exp-company">
+                <span class="company-name">Genzee Technologies / Zenrobotics</span>
+                <span class="exp-location"><i class="fas fa-map-pin"></i> Trivandrum, Kerala</span>
+              </div>
+            </div>
+            <div class="exp-date">
+              <i class="far fa-calendar-check"></i> Jun 2026
+            </div>
+          </div>
+
+          <div class="accreditation-bar">
+            <span><i class="fas fa-certificate"></i> Accredited by ISO, IABAC, IAF &amp; Startup India</span>
+            <span class="cert-award"><i class="fas fa-trophy"></i> 3 Professional Certifications Awarded</span>
+          </div>
+
+          <ul class="exp-bullets">
+            <li>Completed an intensive 14-day practical training programme focused on Data Science and Machine Learning principles and implementations.</li>
+            <li>Worked with real-world datasets and applied comprehensive data preprocessing, exploratory data analysis (EDA), and supervised learning techniques using Python.</li>
+            <li>Gained direct exposure to end-to-end machine learning workflows, including data collection, feature engineering, model training, performance evaluation, and validation metrics.</li>
+            <li>Collaborated in an agile learning environment, solving practical data challenges and presenting analytical insights.</li>
           </ul>
-        </div>
-        <div class="card">
-          <i class="fas fa-medal"></i>
-          <h2>EXPERIENCE & ACHIEVEMENTS</h2>
-          <ul>
-            <li>Leader in multiple group projects & competitions (I love to lead whenever I get a chance)</li>
-            <li>Curious to work on Python</li>
-            <li>Active member, IT workshops & tech networks</li>
-          </ul>
-        </div>
-      </section>
-      <section class="testimonials">
-        <h2>WHAT PEOPLE SAY</h2>
-        <div class="testimonial-card">
-          <a href="https://www.linkedin.com/in/karan-a-s-862612235/" target="_blank">
-            <img src="https://i.ibb.co/BVx19nZ8/IMG-20250705-WA0010.jpg" alt="Karan A S">
-          </a>
-          <div class="testimonial-content">
-            <p>"Abhishek is truly someone who follows through. Intelligent, humble, and always inquisitive, whether it is tech stuff or writing he applies true thought and effort. You can count on him to get things done, and he goes and does it without a problem."</p>
-            <span>Karan A S <span class="title">Classmate</span></span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <a href="https://www.linkedin.com/in/karthik-rk-22b97733b/" target="_blank">
-            <img src="https://i.ibb.co/dJ0jhJz0/20241125-101235-EDIT.jpg" alt="Karthik R K">
-          </a>
-          <div class="testimonial-content">
-            <p>"Working with Abhishek is like turning the lights on, I mean whenever he is in team the things just start moving. He is smart, he is focused, and he genuinely cares about the people around him. Projects in collaboration with him are successful but moreover feel good to be part of."</p>
-            <span>Karthik R K <span class="title">Benchmate</span></span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <a href="https://www.linkedin.com/in/madhav-s-951392331/" target="_blank">
-            <img src="https://i.ibb.co/XrLGy3vG/20241125-101235-EDIT.jpg" alt="Madhav Nair">
-          </a>
-          <div class="testimonial-content">
-            <p>"The most striking thing about Abhishek is his balance ie he is ambitious but down to earth, skilled but continuously learning. He is not boastful, but the value of his work and the way that he treats other people is louder than anything he could say."</p>
-            <span>Madhav Nair <span class="title">Teammate</span></span>
+
+          <div class="tag-row">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Supervised Learning</span>
+            <span class="skill-pill">Data Preprocessing</span>
+            <span class="skill-pill">EDA</span>
+            <span class="skill-pill">Feature Engineering</span>
+            <span class="skill-pill">Scikit-Learn</span>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <h2>CONTACT</h2>
-        <div class="contact-links">
-          <a href="https://github.com/abhishek4me/" target="_blank" class="button github-btn">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/abhishek-r-s-311ab5328" target="_blank" class="button linkedin-btn">
-              <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="mailto:abhishekofficial6969@gmail.com" class="button email-btn">
-            <i class="fas fa-envelope"></i> mail
-          </a>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section projects-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-laptop-code"></i></span>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card featured">
+            <div class="project-accent-tag">
+              <i class="fas fa-compass"></i> Planning Phase &bull; Product Planning Started in 2026
+            </div>
+            <div class="project-header">
+              <h3 class="project-title">KTU RAG-Integrated Syllabus Portal</h3>
+              <div class="project-meta">
+                <span class="badge-role"><i class="fas fa-user-shield"></i> Team Lead</span>
+                <span class="badge-phase planning"><i class="fas fa-clipboard-list"></i> Planning Phase &bull; 2026</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              <strong>Status: Planning Phase.</strong> Planning a web application that will help KTU Electronics and Computer Engineering students search five 2024-scheme syllabi using natural-language queries.
+            </p>
+            <ul class="project-features">
+              <li><strong>Syllabus Search Planning:</strong> Planning a web application that will help KTU Electronics and Computer Engineering students search five 2024-scheme syllabi using natural-language queries.</li>
+              <li><strong>RAG Workflow Preparation:</strong> Preparing a Retrieval-Augmented Generation (RAG) workflow for retrieving relevant syllabus content and generating answers linked to the correct subject, module, and topic.</li>
+              <li><strong>Document-Ingestion Process:</strong> Defining the planned document-ingestion process, including PDF parsing, structured content extraction, module-level chunking, topic-level chunking, and metadata storage.</li>
+              <li><strong>Explorer Concept:</strong> Designing a planned subject-wise syllabus explorer with module navigation, expandable topic sections, responsive layouts, and copy-to-clipboard functionality.</li>
+              <li><strong>Phased Delivery Plan:</strong> Preparing initial product requirements, user flows, technical architecture, success metrics, risks, and a phased seven-week MVP plan.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Planning Phase</span>
+              <span>Retrieval-Augmented Gen</span>
+              <span>Python</span>
+              <span>Semantic Search</span>
+              <span>Document Chunking</span>
+              <span>Vector Embeddings</span>
+              <span>Prompt Design</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Exploratory Data Analysis Projects</h3>
+              <div class="project-meta">
+                <span class="badge-phase"><i class="fas fa-chart-line"></i> 2025 &mdash; Present</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              Comprehensive statistical investigation and visual analysis performed on diverse public datasets to extract high-value business insights, behavioral trends, and distribution anomalies.
+            </p>
+            <ul class="project-features">
+              <li>Executed end-to-end data cleaning, handling missing values, identifying outliers, and computing statistical distributions.</li>
+              <li>Constructed intuitive visualizations of multivariate correlations, scatter plots, and box plots using Matplotlib and Seaborn.</li>
+              <li>Practised communicating analytical findings through clear charts and concise interpretations.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>Data Storytelling</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">JavaScript Algorithm Practice</h3>
+              <div class="project-meta">
+                <span class="badge-phase"><i class="fas fa-check-circle"></i> freeCodeCamp &bull; 2024 &mdash; 2025</span>
+              </div>
+            </div>
+            <p class="project-desc">
+              In-depth computational problem solving and algorithmic scripting completed as part of the recognized Legacy JavaScript Algorithms and Data Structures curriculum.
+            </p>
+            <ul class="project-features">
+              <li>Completed certified curriculum spanning ES6 syntax, functional programming, regex parsing, and algorithmic problem sets.</li>
+              <li>Solved complex challenges on arrays, strings, recursion, sorting, data structures, and Object-Oriented Programming (OOP).</li>
+              <li>Sharpened code optimization, time-complexity awareness, and methodical debugging skills.</li>
+            </ul>
+            <div class="project-tags">
+              <span>JavaScript (ES6+)</span>
+              <span>Algorithms</span>
+              <span>Data Structures</span>
+              <span>OOP</span>
+              <span>Recursion</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section id="skills" class="section skills-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-layer-group"></i></span>
+          <h2>Technical Skills &amp; Competencies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip chip-gold">Python <span class="chip-sub">Proficient</span></span>
+              <span class="chip chip-gold">JavaScript <span class="chip-sub">ES6+</span></span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-chart-pie"></i>
+              <h3>Data Science &amp; Analysis</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+              <span class="chip">Exploratory Data Analysis</span>
+              <span class="chip">Business Intelligence</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-brain"></i>
+              <h3>Machine Learning</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Supervised Learning</span>
+              <span class="chip">Model Evaluation</span>
+              <span class="chip">Feature Engineering</span>
+              <span class="chip">Data Preprocessing</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-network-wired"></i>
+              <h3>RAG &amp; AI Concepts</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Retrieval-Augmented Generation</span>
+              <span class="chip">Semantic Search</span>
+              <span class="chip">Document Chunking</span>
+              <span class="chip">Vector Embeddings</span>
+              <span class="chip">Prompt Design</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 5 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-globe"></i>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript Basics</span>
+              <span class="chip">Responsive Web Design</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 6 -->
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Visual Studio Code</span>
+              <span class="chip">Jupyter Notebook</span>
+              <span class="chip">Adobe Photoshop</span>
+              <span class="chip">Canva</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 7 -->
+          <div class="skill-category full-width">
+            <div class="skill-cat-header">
+              <i class="fas fa-cubes"></i>
+              <h3>Computer Science Concepts</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Object-Oriented Programming (OOP)</span>
+              <span class="chip">Data Structures &amp; Algorithms</span>
+              <span class="chip">Statistical Analysis</span>
+              <span class="chip">Technical Documentation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section certifications-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-award"></i></span>
+          <h2>Certifications &amp; Credentials</h2>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon"><i class="fas fa-brain"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Data Science and Machine Learning &mdash; 14-Day Programme</h3>
+              <div class="cert-issuer">Genzee Technologies / Zenrobotics</div>
+              <div class="cert-meta">
+                <span><i class="far fa-calendar"></i> Jun 2026</span>
+                <span class="cert-accred"><i class="fas fa-shield-alt"></i> ISO &bull; IABAC &bull; IAF &bull; Startup India</span>
+              </div>
+              <p class="cert-desc">Practical intensive training covering data science workflows, machine learning algorithms, and project implementation with 3 certificates awarded.</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Data Analytics for Business Professionals</h3>
+              <div class="cert-issuer">LinkedIn Learning / NASBA and IIBA</div>
+              <div class="cert-meta">
+                <span><i class="far fa-calendar"></i> Apr 2026</span>
+              </div>
+              <p class="cert-desc">Covered business intelligence frameworks, data analytics strategy, and applying quantitative data insights to informed business decisions.</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Data Visualisation for Data Analysts and Analytics</h3>
+              <div class="cert-issuer">LinkedIn Learning / NASBA and IIBA</div>
+              <div class="cert-meta">
+                <span><i class="far fa-calendar"></i> Apr 2026</span>
+              </div>
+              <p class="cert-desc">Covered fundamental data visualisation principles, data storytelling techniques, chart selection heuristics, and executive visual communication.</p>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon"><i class="fab fa-free-code-camp"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Legacy JavaScript Algorithms and Data Structures</h3>
+              <div class="cert-issuer">freeCodeCamp</div>
+              <div class="cert-meta">
+                <span><i class="far fa-calendar"></i> 2024</span>
+              </div>
+              <p class="cert-desc">Rigorous curriculum covering ES6 features, regular expressions, debugging methods, core data structures, and algorithm scripting.</p>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon"><i class="fas fa-laptop"></i></div>
+            <div class="cert-info">
+              <h3 class="cert-title">Digital 101 &mdash; 30 Hours</h3>
+              <div class="cert-issuer">Digital Literacy Programme</div>
+              <div class="cert-meta">
+                <span><i class="far fa-calendar"></i> 2024</span>
+              </div>
+              <p class="cert-desc">Foundational 30-hour training on digital technologies, system navigation, and computing literacy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOFT SKILLS & LANGUAGES -->
+      <section class="section soft-skills-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-comments"></i></span>
+          <h2>Soft Skills &amp; Languages</h2>
+        </div>
+
+        <div class="soft-grid">
+          <div class="soft-card">
+            <h3><i class="fas fa-users-cog"></i> Core Soft Skills</h3>
+            <div class="soft-pills">
+              <span class="soft-pill"><i class="fas fa-check"></i> Team Coordination</span>
+              <span class="soft-pill"><i class="fas fa-check"></i> Leadership &amp; Mentorship</span>
+              <span class="soft-pill"><i class="fas fa-check"></i> Collaborative Problem Solving</span>
+              <span class="soft-pill"><i class="fas fa-check"></i> Curiosity-Driven Learning</span>
+              <span class="soft-pill"><i class="fas fa-check"></i> Adaptability &amp; Resilience</span>
+            </div>
+          </div>
+
+          <div class="soft-card">
+            <h3><i class="fas fa-language"></i> Language Fluency</h3>
+            <div class="lang-list">
+              <div class="lang-row">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level native">Native / Bilingual</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <span class="lang-level prof">Full Professional</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Malayalam</span>
+                <span class="lang-level elem">Elementary Proficiency</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Tamil</span>
+                <span class="lang-level elem">Elementary Proficiency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section testimonials-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-quote-left"></i></span>
+          <h2>What People Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-right"></i></div>
+            <a href="https://www.linkedin.com/in/karan-a-s-862612235/" target="_blank" rel="noopener noreferrer" class="test-avatar-link">
+              <img src="https://i.ibb.co/BVx19nZ8/IMG-20250705-WA0010.jpg" alt="Karan A S" loading="lazy">
+            </a>
+            <div class="testimonial-content">
+              <p>"Abhishek is truly someone who follows through. Intelligent, humble, and always inquisitive, whether it is tech stuff or writing he applies true thought and effort. You can count on him to get things done, and he goes and does it without a problem."</p>
+              <div class="test-author">
+                <span class="author-name">Karan A S</span>
+                <span class="author-role">Classmate &bull; Marian Engineering College</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-right"></i></div>
+            <a href="https://www.linkedin.com/in/karthik-rk-22b97733b/" target="_blank" rel="noopener noreferrer" class="test-avatar-link">
+              <img src="https://i.ibb.co/dJ0jhJz0/20241125-101235-EDIT.jpg" alt="Karthik R K" loading="lazy">
+            </a>
+            <div class="testimonial-content">
+              <p>"Working with Abhishek is like turning the lights on, I mean whenever he is in team the things just start moving. He is smart, he is focused, and he genuinely cares about the people around him. Projects in collaboration with him are successful but moreover feel good to be part of."</p>
+              <div class="test-author">
+                <span class="author-name">Karthik R K</span>
+                <span class="author-role">Benchmate &bull; Marian Engineering College</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-right"></i></div>
+            <a href="https://www.linkedin.com/in/madhav-s-951392331/" target="_blank" rel="noopener noreferrer" class="test-avatar-link">
+              <img src="https://i.ibb.co/XrLGy3vG/20241125-101235-EDIT.jpg" alt="Madhav Nair" loading="lazy">
+            </a>
+            <div class="testimonial-content">
+              <p>"The most striking thing about Abhishek is his balance &mdash; he is ambitious but down to earth, skilled but continuously learning. He is not boastful, but the value of his work and the way that he treats other people is louder than anything he could say."</p>
+              <div class="test-author">
+                <span class="author-name">Madhav Nair</span>
+                <span class="author-role">Teammate &bull; Marian Engineering College</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section contact-section">
+        <div class="section-header">
+          <span class="section-icon"><i class="fas fa-paper-plane"></i></span>
+          <h2>Get in Touch</h2>
+        </div>
+
+        <div class="contact-box">
+          <p class="contact-lead">
+            Whether you want to discuss a collaborative project, data science opportunity, or simply want to connect, feel free to reach out!
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:abhishekofficial6969@gmail.com" class="btn btn-primary" id="emailContactBtn">
+              <i class="fas fa-envelope"></i> Send Email
+            </a>
+            <a href="https://linkedin.com/in/abhishek6969" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="linkedinContactBtn">
+              <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+            <a href="https://github.com/abhishek4me/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="githubContactBtn">
+              <i class="fab fa-github"></i> Explore GitHub
+            </a>
+          </div>
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 <strong>Abhishek R S</strong>. Crafted with dedication in Trivandrum, Kerala.</p>
+        <a href="#about" class="back-to-top" title="Back to top of page">
+          <i class="fas fa-arrow-up"></i> Top
+        </a>
+      </div>
+    </footer>
   </div>
+
+  <!-- INTERACTIVITY & ANIMATION SCRIPT -->
   <script>
-    // JavaScript for scroll-triggered animations
     document.addEventListener('DOMContentLoaded', () => {
+      // Intersection Observer for scroll animations
       const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1 // Trigger when 10% of the element is visible
+        threshold: 0.12
       };
+
       const animateOnScroll = (entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-          } else {
-            // Optional: Remove 'is-visible' if you want elements to animate out when scrolled away
-            // entry.target.classList.remove('is-visible');
           }
         });
       };
+
       const observer = new IntersectionObserver(animateOnScroll, observerOptions);
-      // Observe timeline items for education
-      document.querySelectorAll('.timeline-item').forEach(item => {
-        observer.observe(item);
+
+      // Elements to animate
+      const animatables = document.querySelectorAll(
+        '.roadmap-item, .experience-card, .project-card, .skill-category, .cert-card, .testimonial-card, .summary-card, .soft-card'
+      );
+
+      animatables.forEach((el, index) => {
+        el.style.transitionDelay = `${(index % 3) * 0.1}s`;
+        observer.observe(el);
       });
-      // Observe testimonial cards
-      document.querySelectorAll('.testimonial-card').forEach(card => {
-        observer.observe(card);
-      });
-      // Observe info cards (Skills & Experience)
-      document.querySelectorAll('.info-cards .card').forEach(card => {
-        observer.observe(card);
+
+      // Smooth scroll for nav links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
       });
     });
   </script>
 </body>
 </html>
-
